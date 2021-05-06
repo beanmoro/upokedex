@@ -47,6 +47,9 @@ const cargarTabla = ()=>{
     tdNro.innerText = (i+1);
     let tdNombre = document.createElement("td");
     tdNombre.innerText = p.nombre;
+    if (p.legendario) {
+      tdNombre.classList.add("text-warning");
+    }
     let tdTipo = document.createElement("td");
     let icono = document.createElement("i");
 
